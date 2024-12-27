@@ -1,0 +1,31 @@
+{
+  "include": ["./src/**/*.tsx"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "module": "ESNext",
+    "target": "ES6",
+    "jsx": "react",
+    "pretty": true,
+    "strict": true,
+    // go to js file when using IDE functions like
+    // "Go to Definition" in VSCode
+    "declarationMap": true,
+    // TS source maps in devtool etc
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["DOM", "ES2023", "ES2023.Array"],
+    // makes file smaller by pulling in TS helpers from tslib
+    "importHelpers": true,
+    // Allow JS files to be compiled to types
+    "allowJs": true,
+    // Generate d.ts files
+    "declaration": true,
+    // Types should go into this directory.
+    // Removing this would place the .d.ts files
+    // next to the .js files
+    "outDir": "dist",
+  }
+}
