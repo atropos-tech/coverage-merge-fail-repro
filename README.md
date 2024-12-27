@@ -35,3 +35,6 @@ One easy way to see this is in the Cypress JSON coverage file, which includes th
 ```
 
 ...which is not present in the vitest JSON output. I don't know how the mapping process works but this is clearly not respected during merge.
+
+## Ruled out
+I thought originally this might be a bug in the `istanbul-merge` library, which I only use because it has much better ergonomics than `nyc merge`. Using `nyc merge` gives the same result.
